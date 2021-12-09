@@ -1,13 +1,8 @@
 import requests,csv
 from bs4 import  BeautifulSoup
 
-# for hi in range(1,5):	
-# 	url='https://news.ycombinator.com/news?p='+str(hi)
-# 	print(url)
-# 	Soup=BeautifulSoup(requests.get(url).text,'lxml')
-
 def news():
-	for hi in range(1,40):	
+	for hi in range(1,10):	
 		url='https://news.ycombinator.com/news?p='+str(hi)
 		Soup=BeautifulSoup(requests.get(url).text,'lxml')
 		hi=Soup.find_all(class_='athing')
