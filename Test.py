@@ -69,9 +69,9 @@ def news():
 
 		# print(f'Title:{Title} lnkcmtLinks:{link} Points:{Rate} comments:{ccmt} linkscomment:{lnkcmt} age:{age}')
 
-
-		with open('Yhackers.csv',newline='',mode='r+') as fire:
+		with open('haha.csv',newline='',mode='a+') as fire:
 			spam=csv.writer(fire,delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-			spam.writerow([age])
+			spam.writerow([Title,link])
+
 
 news()
